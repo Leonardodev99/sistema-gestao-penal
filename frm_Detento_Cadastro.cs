@@ -25,5 +25,17 @@ namespace system
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frm_main frm = new frm_main();
+            frm.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cadastro feito com sucesso");
+        }
     }
 }

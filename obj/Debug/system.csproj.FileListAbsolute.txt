@@ -11,8 +11,8 @@ C:\presystem\system\obj\Debug\system.frm_main.resources
 C:\presystem\system\obj\Debug\system.frm_login.resources
 C:\presystem\system\obj\Debug\system.frm_Detento_Cadastro.resources
 C:\presystem\system\obj\Debug\system.frm_visita_agenda.resources
-C:\presystem\system\obj\Debug\system.frm_Atividades_laboral.resources
 C:\presystem\system\obj\Debug\system.frm_Atividade_desporto.resources
 C:\presystem\system\obj\Debug\system.frm_Atividade_curso.resources
 C:\presystem\system\obj\Debug\system.frm_Pena_registrar.resources
 C:\presystem\system\obj\Debug\system.frm_cela_registro.resources
+C:\presystem\system\obj\Debug\system.frm_Atividades.resources

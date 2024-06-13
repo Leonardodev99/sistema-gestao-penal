@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace system
 {
-    public partial class frm_cela_registro : Form
+    public partial class frm_Atividades : Form
     {
-        public frm_cela_registro()
+        public frm_Atividades()
         {
             InitializeComponent();
         }
 
-        private void frm_cela_registro_Load(object sender, EventArgs e)
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_Atividades_Load(object sender, EventArgs e)
         {
 
         }
@@ -29,7 +39,7 @@ namespace system
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("Cadastro feito com sucesso");
         }

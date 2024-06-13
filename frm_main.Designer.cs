@@ -48,9 +48,6 @@
             this.cONSULTARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tURMASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cURSOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dESPORTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rEGISTRARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONSULTARToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.gESTÃODEPENASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dETENTOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tRANFERIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -105,14 +102,14 @@
             // cADASTRARToolStripMenuItem
             // 
             this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
-            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cADASTRARToolStripMenuItem.Text = "CADASTRAR";
             this.cADASTRARToolStripMenuItem.Click += new System.EventHandler(this.cADASTRARToolStripMenuItem_Click);
             // 
             // eDITARToolStripMenuItem
             // 
             this.eDITARToolStripMenuItem.Name = "eDITARToolStripMenuItem";
-            this.eDITARToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.eDITARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eDITARToolStripMenuItem.Text = "CONSUTAR";
             // 
             // vISITASToolStripMenuItem
@@ -165,8 +162,7 @@
             // 
             this.aTIVIDADESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tRABALHOToolStripMenuItem,
-            this.cURSOSToolStripMenuItem,
-            this.dESPORTOToolStripMenuItem});
+            this.cURSOSToolStripMenuItem});
             this.aTIVIDADESToolStripMenuItem.Name = "aTIVIDADESToolStripMenuItem";
             this.aTIVIDADESToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.aTIVIDADESToolStripMenuItem.Text = "ATIVIDADES";
@@ -178,21 +174,21 @@
             this.rEGISTRARToolStripMenuItem,
             this.cONSULTARToolStripMenuItem2});
             this.tRABALHOToolStripMenuItem.Name = "tRABALHOToolStripMenuItem";
-            this.tRABALHOToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.tRABALHOToolStripMenuItem.Text = "TRABALHO";
+            this.tRABALHOToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.tRABALHOToolStripMenuItem.Text = "TRABALHO/DESPORTO";
             this.tRABALHOToolStripMenuItem.Click += new System.EventHandler(this.tRABALHOToolStripMenuItem_Click);
             // 
             // rEGISTRARToolStripMenuItem
             // 
             this.rEGISTRARToolStripMenuItem.Name = "rEGISTRARToolStripMenuItem";
-            this.rEGISTRARToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.rEGISTRARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rEGISTRARToolStripMenuItem.Text = "REGISTRAR";
             this.rEGISTRARToolStripMenuItem.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem_Click);
             // 
             // cONSULTARToolStripMenuItem2
             // 
             this.cONSULTARToolStripMenuItem2.Name = "cONSULTARToolStripMenuItem2";
-            this.cONSULTARToolStripMenuItem2.Size = new System.Drawing.Size(139, 22);
+            this.cONSULTARToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cONSULTARToolStripMenuItem2.Text = "CONSULTAR";
             // 
             // cURSOSToolStripMenuItem
@@ -201,13 +197,13 @@
             this.mATRICULARToolStripMenuItem,
             this.cONSULTARToolStripMenuItem1});
             this.cURSOSToolStripMenuItem.Name = "cURSOSToolStripMenuItem";
-            this.cURSOSToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.cURSOSToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.cURSOSToolStripMenuItem.Text = "CURSOS";
             // 
             // mATRICULARToolStripMenuItem
             // 
             this.mATRICULARToolStripMenuItem.Name = "mATRICULARToolStripMenuItem";
-            this.mATRICULARToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.mATRICULARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mATRICULARToolStripMenuItem.Text = "MATRICULAR";
             this.mATRICULARToolStripMenuItem.Click += new System.EventHandler(this.mATRICULARToolStripMenuItem_Click);
             // 
@@ -217,7 +213,7 @@
             this.tURMASToolStripMenuItem,
             this.cURSOToolStripMenuItem});
             this.cONSULTARToolStripMenuItem1.Name = "cONSULTARToolStripMenuItem1";
-            this.cONSULTARToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
+            this.cONSULTARToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.cONSULTARToolStripMenuItem1.Text = "CONSULTAR";
             // 
             // tURMASToolStripMenuItem
@@ -232,28 +228,6 @@
             this.cURSOToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.cURSOToolStripMenuItem.Text = "CURSO";
             // 
-            // dESPORTOToolStripMenuItem
-            // 
-            this.dESPORTOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rEGISTRARToolStripMenuItem1,
-            this.cONSULTARToolStripMenuItem3});
-            this.dESPORTOToolStripMenuItem.Name = "dESPORTOToolStripMenuItem";
-            this.dESPORTOToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.dESPORTOToolStripMenuItem.Text = "DESPORTO";
-            // 
-            // rEGISTRARToolStripMenuItem1
-            // 
-            this.rEGISTRARToolStripMenuItem1.Name = "rEGISTRARToolStripMenuItem1";
-            this.rEGISTRARToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
-            this.rEGISTRARToolStripMenuItem1.Text = "REGISTRAR";
-            this.rEGISTRARToolStripMenuItem1.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem1_Click);
-            // 
-            // cONSULTARToolStripMenuItem3
-            // 
-            this.cONSULTARToolStripMenuItem3.Name = "cONSULTARToolStripMenuItem3";
-            this.cONSULTARToolStripMenuItem3.Size = new System.Drawing.Size(139, 22);
-            this.cONSULTARToolStripMenuItem3.Text = "CONSULTAR";
-            // 
             // gESTÃODEPENASToolStripMenuItem
             // 
             this.gESTÃODEPENASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -261,27 +235,27 @@
             this.tRANFERIRToolStripMenuItem,
             this.rEGISTRARToolStripMenuItem2});
             this.gESTÃODEPENASToolStripMenuItem.Name = "gESTÃODEPENASToolStripMenuItem";
-            this.gESTÃODEPENASToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
-            this.gESTÃODEPENASToolStripMenuItem.Text = "GESTÃO DE PENAS";
+            this.gESTÃODEPENASToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.gESTÃODEPENASToolStripMenuItem.Text = "BLOQUEIAR ECRÂ";
             this.gESTÃODEPENASToolStripMenuItem.Click += new System.EventHandler(this.gESTÃODEPENASToolStripMenuItem_Click);
             // 
             // dETENTOToolStripMenuItem1
             // 
             this.dETENTOToolStripMenuItem1.Name = "dETENTOToolStripMenuItem1";
-            this.dETENTOToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
+            this.dETENTOToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.dETENTOToolStripMenuItem1.Text = "REGISTRAR";
             this.dETENTOToolStripMenuItem1.Click += new System.EventHandler(this.dETENTOToolStripMenuItem1_Click);
             // 
             // tRANFERIRToolStripMenuItem
             // 
             this.tRANFERIRToolStripMenuItem.Name = "tRANFERIRToolStripMenuItem";
-            this.tRANFERIRToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.tRANFERIRToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.tRANFERIRToolStripMenuItem.Text = "CONSULTAR";
             // 
             // rEGISTRARToolStripMenuItem2
             // 
             this.rEGISTRARToolStripMenuItem2.Name = "rEGISTRARToolStripMenuItem2";
-            this.rEGISTRARToolStripMenuItem2.Size = new System.Drawing.Size(139, 22);
+            this.rEGISTRARToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.rEGISTRARToolStripMenuItem2.Text = "ALTERAÇÃO";
             this.rEGISTRARToolStripMenuItem2.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem2_Click);
             // 
@@ -326,9 +300,6 @@
         private System.Windows.Forms.ToolStripMenuItem cONSULTARToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tURMASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cURSOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dESPORTOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rEGISTRARToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cONSULTARToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem gESTÃODEPENASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dETENTOToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tRANFERIRToolStripMenuItem;

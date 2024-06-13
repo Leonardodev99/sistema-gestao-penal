@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_Atividades_laboral.cs">
+    <Compile Include="frm_Atividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Atividades_laboral.Designer.cs">
-      <DependentUpon>frm_Atividades_laboral.cs</DependentUpon>
+    <Compile Include="frm_Atividades.Designer.cs">
+      <DependentUpon>frm_Atividades.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Atividade_curso.cs">
       <SubType>Form</SubType>
@@ -108,8 +108,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_Atividades_laboral.resx">
-      <DependentUpon>frm_Atividades_laboral.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Atividades.resx">
+      <DependentUpon>frm_Atividades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Atividade_curso.resx">
       <DependentUpon>frm_Atividade_curso.cs</DependentUpon>

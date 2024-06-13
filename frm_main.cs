@@ -39,7 +39,7 @@ namespace system
 
         private void rEGISTRARToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_Atividades_laboral frm = new frm_Atividades_laboral();
+            frm_Atividades frm = new frm_Atividades();
             frm.Show();
             this.Close();
         }

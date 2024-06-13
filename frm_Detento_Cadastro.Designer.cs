@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.Panel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -74,6 +75,7 @@
             // Panel
             // 
             this.Panel.AutoScroll = true;
+            this.Panel.Controls.Add(this.button2);
             this.Panel.Controls.Add(this.label1);
             this.Panel.Controls.Add(this.button1);
             this.Panel.Controls.Add(this.panel3);
@@ -83,6 +85,16 @@
             this.Panel.Name = "Panel";
             this.Panel.Size = new System.Drawing.Size(923, 703);
             this.Panel.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(304, 659);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(82, 22);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "VOLTAR";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -96,12 +108,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(428, 660);
+            this.button1.Location = new System.Drawing.Point(580, 658);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
-            this.button1.Text = "ENVIAR";
+            this.button1.Text = "CADASTRAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -473,5 +486,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }

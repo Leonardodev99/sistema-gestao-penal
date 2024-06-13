@@ -89,7 +89,10 @@ namespace system
 
         private void gESTÃODEPENASToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frm_login frm = new frm_login();
+            frm.Show();
+            this.Close();
+                
         }
 
         private void vISITASToolStripMenuItem_Click(object sender, EventArgs e)

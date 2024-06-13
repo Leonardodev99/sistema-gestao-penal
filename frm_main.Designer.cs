@@ -49,9 +49,6 @@
             this.tURMASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cURSOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gESTÃODEPENASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dETENTOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tRANFERIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rEGISTRARToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -230,34 +227,10 @@
             // 
             // gESTÃODEPENASToolStripMenuItem
             // 
-            this.gESTÃODEPENASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dETENTOToolStripMenuItem1,
-            this.tRANFERIRToolStripMenuItem,
-            this.rEGISTRARToolStripMenuItem2});
             this.gESTÃODEPENASToolStripMenuItem.Name = "gESTÃODEPENASToolStripMenuItem";
             this.gESTÃODEPENASToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
             this.gESTÃODEPENASToolStripMenuItem.Text = "BLOQUEIAR ECRÂ";
             this.gESTÃODEPENASToolStripMenuItem.Click += new System.EventHandler(this.gESTÃODEPENASToolStripMenuItem_Click);
-            // 
-            // dETENTOToolStripMenuItem1
-            // 
-            this.dETENTOToolStripMenuItem1.Name = "dETENTOToolStripMenuItem1";
-            this.dETENTOToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.dETENTOToolStripMenuItem1.Text = "REGISTRAR";
-            this.dETENTOToolStripMenuItem1.Click += new System.EventHandler(this.dETENTOToolStripMenuItem1_Click);
-            // 
-            // tRANFERIRToolStripMenuItem
-            // 
-            this.tRANFERIRToolStripMenuItem.Name = "tRANFERIRToolStripMenuItem";
-            this.tRANFERIRToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.tRANFERIRToolStripMenuItem.Text = "CONSULTAR";
-            // 
-            // rEGISTRARToolStripMenuItem2
-            // 
-            this.rEGISTRARToolStripMenuItem2.Name = "rEGISTRARToolStripMenuItem2";
-            this.rEGISTRARToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.rEGISTRARToolStripMenuItem2.Text = "ALTERAÇÃO";
-            this.rEGISTRARToolStripMenuItem2.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem2_Click);
             // 
             // frm_main
             // 
@@ -301,9 +274,6 @@
         private System.Windows.Forms.ToolStripMenuItem tURMASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cURSOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gESTÃODEPENASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dETENTOToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem tRANFERIRToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rEGISTRARToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem oCORRÊNCIASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gERISTRARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cONSULTARToolStripMenuItem;

@@ -96,6 +96,7 @@
     </Compile>
     <Compile Include="Model\Cursos.cs" />
     <Compile Include="Model\Cela.cs" />
+    <Compile Include="Model\Visitas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_Atividade_curso.resx">

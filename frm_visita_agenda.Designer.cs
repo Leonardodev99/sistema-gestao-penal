@@ -29,23 +29,21 @@
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textEndereco = new System.Windows.Forms.TextBox();
+            this.textBI = new System.Windows.Forms.TextBox();
+            this.textNome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDataVisita = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textMotivo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -56,11 +54,11 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.dateTimePicker3);
+            this.panel4.Controls.Add(this.dateTimePickerDataNascimento);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.textEndereco);
+            this.panel4.Controls.Add(this.textBI);
+            this.panel4.Controls.Add(this.textNome);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label3);
@@ -70,12 +68,12 @@
             this.panel4.Size = new System.Drawing.Size(898, 184);
             this.panel4.TabIndex = 2;
             // 
-            // dateTimePicker3
+            // dateTimePickerDataNascimento
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(6, 149);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 13;
+            this.dateTimePickerDataNascimento.Location = new System.Drawing.Point(6, 149);
+            this.dateTimePickerDataNascimento.Name = "dateTimePickerDataNascimento";
+            this.dateTimePickerDataNascimento.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerDataNascimento.TabIndex = 13;
             // 
             // label14
             // 
@@ -86,27 +84,27 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "Data de nascimento";
             // 
-            // textBox3
+            // textEndereco
             // 
-            this.textBox3.Location = new System.Drawing.Point(616, 79);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 90);
-            this.textBox3.TabIndex = 6;
+            this.textEndereco.Location = new System.Drawing.Point(616, 79);
+            this.textEndereco.Multiline = true;
+            this.textEndereco.Name = "textEndereco";
+            this.textEndereco.Size = new System.Drawing.Size(270, 90);
+            this.textEndereco.TabIndex = 6;
             // 
-            // textBox2
+            // textBI
             // 
-            this.textBox2.Location = new System.Drawing.Point(368, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 20);
-            this.textBox2.TabIndex = 5;
+            this.textBI.Location = new System.Drawing.Point(368, 79);
+            this.textBI.Name = "textBI";
+            this.textBI.Size = new System.Drawing.Size(199, 20);
+            this.textBI.TabIndex = 5;
             // 
-            // textBox1
+            // textNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 20);
-            this.textBox1.TabIndex = 4;
+            this.textNome.Location = new System.Drawing.Point(6, 79);
+            this.textNome.Name = "textNome";
+            this.textNome.Size = new System.Drawing.Size(270, 20);
+            this.textNome.TabIndex = 4;
             // 
             // label5
             // 
@@ -157,12 +155,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.dateTimePickerDataVisita);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.textMotivo);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Location = new System.Drawing.Point(9, 269);
             this.panel1.Name = "panel1";
@@ -170,12 +166,12 @@
             this.panel1.TabIndex = 8;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // dateTimePicker1
+            // dateTimePickerDataVisita
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(677, 76);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dateTimePickerDataVisita.Location = new System.Drawing.Point(677, 76);
+            this.dateTimePickerDataVisita.Name = "dateTimePickerDataVisita";
+            this.dateTimePickerDataVisita.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerDataVisita.TabIndex = 13;
             // 
             // label6
             // 
@@ -186,40 +182,23 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Data da visita";
             // 
-            // textBox4
+            // textMotivo
             // 
-            this.textBox4.Location = new System.Drawing.Point(171, 79);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(435, 90);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(6, 79);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(97, 20);
-            this.textBox6.TabIndex = 4;
+            this.textMotivo.Location = new System.Drawing.Point(23, 79);
+            this.textMotivo.Multiline = true;
+            this.textMotivo.Name = "textMotivo";
+            this.textMotivo.Size = new System.Drawing.Size(583, 90);
+            this.textMotivo.TabIndex = 6;
+            this.textMotivo.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(343, 49);
+            this.label7.Location = new System.Drawing.Point(24, 49);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 13);
             this.label7.TabIndex = 3;
             this.label7.Text = "Motivo da visita";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 49);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "ID da visita";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -232,7 +211,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(575, 472);
+            this.button1.Location = new System.Drawing.Point(226, 474);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 23);
             this.button1.TabIndex = 9;
@@ -242,7 +221,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(249, 473);
+            this.button2.Location = new System.Drawing.Point(687, 474);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 22);
             this.button2.TabIndex = 10;
@@ -275,23 +254,21 @@
         #endregion
 
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDataNascimento;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textEndereco;
+        private System.Windows.Forms.TextBox textBI;
+        private System.Windows.Forms.TextBox textNome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDataVisita;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textMotivo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

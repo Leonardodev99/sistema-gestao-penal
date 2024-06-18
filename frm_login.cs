@@ -1,42 +1,58 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace system
 {
     public partial class frm_login : Form
     {
+        // Referência da conexão
+        SqlConnection connection = new SqlConnection(@"Data Source=PC\LEO;Initial Catalog=db_presystem;Integrated Security=True");
+
         public frm_login()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
+          
+        }
 
-            if(username == "tiago" && password == "123dev")
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            try
             {
-                frm_main frm = new frm_main();
-                frm.Show();
+                connection.Open();
+                string query = "SELECT COUNT(1) FROM usuarios WHERE username = @username AND password = @password";
 
-                this.Close();
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.Add("@username", SqlDbType.VarChar).Value = textUsername.Text.Trim();
+                    cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = textPassword.Text.Trim();
+
+                    int count = (int)cmd.ExecuteScalar();
+
+                    if (count == 1)
+                    {
+                        frm_main frm = new frm_main();
+                        frm.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nome do usuário ou password incorreta", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
-            else
+            catch (SqlException ex)
             {
-                MessageBox.Show("Nome do usuário ou password incorreta");
+                MessageBox.Show($"Erro de SQL: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connection.Close();
             }
         }
     }

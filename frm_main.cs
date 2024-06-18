@@ -39,16 +39,16 @@ namespace system
 
         private void rEGISTRARToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_Atividades frm = new frm_Atividades();
+            /*frm_Atividades frm = new frm_Atividades();
             frm.Show();
-            this.Close();
+            this.Close();*/
         }
 
         private void rEGISTRARToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frm_Atividade_desporto frm = new frm_Atividade_desporto();
+            /*frm_Atividade_desporto frm = new frm_Atividade_desporto();
             frm.Show();
-            this.Close();
+            this.Close();*/
         }
 
         private void mATRICULARToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace system
 
         private void gERISTRARToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_cela_registro frm = new frm_cela_registro();
+            frm_cela frm = new frm_cela();
             frm.Show();
             this.Close();
         }

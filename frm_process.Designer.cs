@@ -49,9 +49,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(697, 434);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "frm_process";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Carregamento";
             this.Load += new System.EventHandler(this.frm_process_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

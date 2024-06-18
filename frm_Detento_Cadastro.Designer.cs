@@ -30,9 +30,10 @@
         {
             this.Panel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -41,8 +42,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -51,17 +51,18 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.cmbGenero = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtpDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textEndereco = new System.Windows.Forms.TextBox();
+            this.textBI = new System.Windows.Forms.TextBox();
+            this.textNome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -76,7 +77,6 @@
             // 
             this.Panel.AutoScroll = true;
             this.Panel.Controls.Add(this.button2);
-            this.Panel.Controls.Add(this.label1);
             this.Panel.Controls.Add(this.button1);
             this.Panel.Controls.Add(this.panel3);
             this.Panel.Controls.Add(this.panel2);
@@ -96,16 +96,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(330, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "FICHA DE CADASTRO";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(580, 658);
@@ -119,6 +109,8 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.dateTimePicker4);
             this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.textBox10);
@@ -130,6 +122,22 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(898, 186);
             this.panel3.TabIndex = 3;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(316, 151);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(259, 20);
+            this.textBox5.TabIndex = 26;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(376, 117);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(87, 13);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Juíz responsável";
             // 
             // dateTimePicker4
             // 
@@ -192,8 +200,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.textBox8);
-            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.textBox7);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.dateTimePicker2);
@@ -202,7 +209,6 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.textBox6);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.label7);
@@ -212,21 +218,23 @@
             this.panel2.Size = new System.Drawing.Size(898, 206);
             this.panel2.TabIndex = 2;
             // 
-            // textBox8
+            // listBox1
             // 
-            this.textBox8.Location = new System.Drawing.Point(668, 160);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(218, 20);
-            this.textBox8.TabIndex = 18;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(665, 130);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(66, 13);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "Estado atual";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "A8",
+            "A9"});
+            this.listBox1.Location = new System.Drawing.Point(717, 160);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 17);
+            this.listBox1.TabIndex = 17;
             // 
             // textBox7
             // 
@@ -272,13 +280,13 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(683, 45);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 13);
+            this.label10.Size = new System.Drawing.Size(92, 13);
             this.label10.TabIndex = 11;
-            this.label10.Text = "Data da detenteção";
+            this.label10.Text = "Data da sentença";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(379, 75);
+            this.textBox6.Location = new System.Drawing.Point(285, 78);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(259, 20);
             this.textBox6.TabIndex = 10;
@@ -292,21 +300,14 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Crime";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(218, 75);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(78, 20);
-            this.textBox5.TabIndex = 8;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(215, 45);
+            this.label8.Location = new System.Drawing.Point(737, 130);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 13);
+            this.label8.Size = new System.Drawing.Size(73, 13);
             this.label8.TabIndex = 7;
-            this.label8.Text = "ID da cela";
+            this.label8.Text = "Nome da cela";
             // 
             // textBox4
             // 
@@ -320,9 +321,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(5, 45);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 13);
+            this.label7.Size = new System.Drawing.Size(105, 13);
             this.label7.TabIndex = 2;
-            this.label7.Text = "ID do processo";
+            this.label7.Text = "Número do processo";
             // 
             // label6
             // 
@@ -336,11 +337,13 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.dateTimePicker3);
+            this.panel4.Controls.Add(this.cmbGenero);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.dtpDataNascimento);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.textEndereco);
+            this.panel4.Controls.Add(this.textBI);
+            this.panel4.Controls.Add(this.textNome);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label3);
@@ -350,12 +353,32 @@
             this.panel4.Size = new System.Drawing.Size(898, 184);
             this.panel4.TabIndex = 1;
             // 
-            // dateTimePicker3
+            // cmbGenero
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(6, 149);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 13;
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cmbGenero.Location = new System.Drawing.Point(339, 152);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(120, 17);
+            this.cmbGenero.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(336, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Gênero";
+            // 
+            // dtpDataNascimento
+            // 
+            this.dtpDataNascimento.Location = new System.Drawing.Point(6, 149);
+            this.dtpDataNascimento.Name = "dtpDataNascimento";
+            this.dtpDataNascimento.Size = new System.Drawing.Size(200, 20);
+            this.dtpDataNascimento.TabIndex = 13;
             // 
             // label14
             // 
@@ -366,27 +389,27 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "Data de nascimento";
             // 
-            // textBox3
+            // textEndereco
             // 
-            this.textBox3.Location = new System.Drawing.Point(616, 79);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 90);
-            this.textBox3.TabIndex = 6;
+            this.textEndereco.Location = new System.Drawing.Point(616, 79);
+            this.textEndereco.Multiline = true;
+            this.textEndereco.Name = "textEndereco";
+            this.textEndereco.Size = new System.Drawing.Size(270, 90);
+            this.textEndereco.TabIndex = 6;
             // 
-            // textBox2
+            // textBI
             // 
-            this.textBox2.Location = new System.Drawing.Point(368, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 20);
-            this.textBox2.TabIndex = 5;
+            this.textBI.Location = new System.Drawing.Point(368, 79);
+            this.textBI.Name = "textBI";
+            this.textBI.Size = new System.Drawing.Size(199, 20);
+            this.textBI.TabIndex = 5;
             // 
-            // textBox1
+            // textNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 20);
-            this.textBox1.TabIndex = 4;
+            this.textNome.Location = new System.Drawing.Point(6, 79);
+            this.textNome.Name = "textNome";
+            this.textNome.Size = new System.Drawing.Size(270, 20);
+            this.textNome.TabIndex = 4;
             // 
             // label5
             // 
@@ -437,7 +460,6 @@
             this.Text = "frm_Detento_Cadastro";
             this.Load += new System.EventHandler(this.frm_Detento_Cadastro_Load);
             this.Panel.ResumeLayout(false);
-            this.Panel.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -451,17 +473,7 @@
         #endregion
         private System.Windows.Forms.Panel Panel;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
@@ -470,22 +482,33 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dtpDataNascimento;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textEndereco;
+        private System.Windows.Forms.TextBox textBI;
+        private System.Windows.Forms.TextBox textNome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox cmbGenero;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
     }
 }

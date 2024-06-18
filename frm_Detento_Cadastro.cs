@@ -37,5 +37,14 @@ namespace system
         {
             MessageBox.Show("Cadastro feito com sucesso");
         }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+                    }
     }
 }

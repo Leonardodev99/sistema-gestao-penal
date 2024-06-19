@@ -189,6 +189,13 @@ namespace system
             textIdCurso.Text = "";
             textCela.Text = "";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frm_main frm = new frm_main();
+            frm.Show();
+            this.Close();
+        }
     }
 }
 

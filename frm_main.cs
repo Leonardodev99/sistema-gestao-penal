@@ -89,9 +89,7 @@ namespace system
 
         private void gESTÃODEPENASToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_login frm = new frm_login();
-            frm.Show();
-            this.Close();
+           
                 
         }
 
@@ -103,6 +101,53 @@ namespace system
         private void rEGISTRARToolStripMenuItem2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bLOQUIOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_login frm = new frm_login();
+            frm.Show();
+            this.Close();
+        }
+
+        private void sAIRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void cONSULTARToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frm_ListarCursos fr = new frm_ListarCursos();
+            fr.Show();
+            this.Close();
+        }
+
+        private void rEAGENDARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ListarVisitas fr = new frm_ListarVisitas();
+            fr.Show();
+            this.Close();
+        }
+
+        private void cONSULTARToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frm_ListarAtividades fr = new frm_ListarAtividades();
+            fr.Show();
+            this.Close();
+        }
+
+        private void eDITARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ListarDetentos fr = new frm_ListarDetentos();
+            fr.Show();
+            this.Close();
+        }
+
+        private void cONSULTARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ListarCelas fr = new frm_ListarCelas();
+            fr.Show();
+            this.Close();
         }
     }
 }

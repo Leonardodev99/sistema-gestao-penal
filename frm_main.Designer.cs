@@ -46,9 +46,9 @@
             this.cURSOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mATRICULARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONSULTARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tURMASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cURSOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gESTÃODEPENASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bLOQUIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -99,7 +99,7 @@
             // cADASTRARToolStripMenuItem
             // 
             this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
-            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.cADASTRARToolStripMenuItem.Text = "CADASTRAR";
             this.cADASTRARToolStripMenuItem.Click += new System.EventHandler(this.cADASTRARToolStripMenuItem_Click);
             // 
@@ -108,6 +108,7 @@
             this.eDITARToolStripMenuItem.Name = "eDITARToolStripMenuItem";
             this.eDITARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eDITARToolStripMenuItem.Text = "CONSUTAR";
+            this.eDITARToolStripMenuItem.Click += new System.EventHandler(this.eDITARToolStripMenuItem_Click);
             // 
             // vISITASToolStripMenuItem
             // 
@@ -131,6 +132,7 @@
             this.rEAGENDARToolStripMenuItem.Name = "rEAGENDARToolStripMenuItem";
             this.rEAGENDARToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.rEAGENDARToolStripMenuItem.Text = "CONSULTAR";
+            this.rEAGENDARToolStripMenuItem.Click += new System.EventHandler(this.rEAGENDARToolStripMenuItem_Click);
             // 
             // oCORRÊNCIASToolStripMenuItem
             // 
@@ -152,8 +154,9 @@
             // cONSULTARToolStripMenuItem
             // 
             this.cONSULTARToolStripMenuItem.Name = "cONSULTARToolStripMenuItem";
-            this.cONSULTARToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.cONSULTARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cONSULTARToolStripMenuItem.Text = "CONSULTAR";
+            this.cONSULTARToolStripMenuItem.Click += new System.EventHandler(this.cONSULTARToolStripMenuItem_Click);
             // 
             // aTIVIDADESToolStripMenuItem
             // 
@@ -187,6 +190,7 @@
             this.cONSULTARToolStripMenuItem2.Name = "cONSULTARToolStripMenuItem2";
             this.cONSULTARToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cONSULTARToolStripMenuItem2.Text = "CONSULTAR";
+            this.cONSULTARToolStripMenuItem2.Click += new System.EventHandler(this.cONSULTARToolStripMenuItem2_Click);
             // 
             // cURSOSToolStripMenuItem
             // 
@@ -200,37 +204,40 @@
             // mATRICULARToolStripMenuItem
             // 
             this.mATRICULARToolStripMenuItem.Name = "mATRICULARToolStripMenuItem";
-            this.mATRICULARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mATRICULARToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.mATRICULARToolStripMenuItem.Text = "MATRICULAR";
             this.mATRICULARToolStripMenuItem.Click += new System.EventHandler(this.mATRICULARToolStripMenuItem_Click);
             // 
             // cONSULTARToolStripMenuItem1
             // 
-            this.cONSULTARToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tURMASToolStripMenuItem,
-            this.cURSOToolStripMenuItem});
             this.cONSULTARToolStripMenuItem1.Name = "cONSULTARToolStripMenuItem1";
-            this.cONSULTARToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.cONSULTARToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
             this.cONSULTARToolStripMenuItem1.Text = "CONSULTAR";
-            // 
-            // tURMASToolStripMenuItem
-            // 
-            this.tURMASToolStripMenuItem.Name = "tURMASToolStripMenuItem";
-            this.tURMASToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.tURMASToolStripMenuItem.Text = "TURMAS";
-            // 
-            // cURSOToolStripMenuItem
-            // 
-            this.cURSOToolStripMenuItem.Name = "cURSOToolStripMenuItem";
-            this.cURSOToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.cURSOToolStripMenuItem.Text = "CURSO";
+            this.cONSULTARToolStripMenuItem1.Click += new System.EventHandler(this.cONSULTARToolStripMenuItem1_Click);
             // 
             // gESTÃODEPENASToolStripMenuItem
             // 
+            this.gESTÃODEPENASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bLOQUIOToolStripMenuItem,
+            this.sAIRToolStripMenuItem});
             this.gESTÃODEPENASToolStripMenuItem.Name = "gESTÃODEPENASToolStripMenuItem";
-            this.gESTÃODEPENASToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
-            this.gESTÃODEPENASToolStripMenuItem.Text = "BLOQUEIAR ECRÂ";
+            this.gESTÃODEPENASToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.gESTÃODEPENASToolStripMenuItem.Text = "BECRÂ";
             this.gESTÃODEPENASToolStripMenuItem.Click += new System.EventHandler(this.gESTÃODEPENASToolStripMenuItem_Click);
+            // 
+            // bLOQUIOToolStripMenuItem
+            // 
+            this.bLOQUIOToolStripMenuItem.Name = "bLOQUIOToolStripMenuItem";
+            this.bLOQUIOToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.bLOQUIOToolStripMenuItem.Text = "BLOQUEIO";
+            this.bLOQUIOToolStripMenuItem.Click += new System.EventHandler(this.bLOQUIOToolStripMenuItem_Click);
+            // 
+            // sAIRToolStripMenuItem
+            // 
+            this.sAIRToolStripMenuItem.Name = "sAIRToolStripMenuItem";
+            this.sAIRToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.sAIRToolStripMenuItem.Text = "SAIR";
+            this.sAIRToolStripMenuItem.Click += new System.EventHandler(this.sAIRToolStripMenuItem_Click);
             // 
             // frm_main
             // 
@@ -271,11 +278,11 @@
         private System.Windows.Forms.ToolStripMenuItem cURSOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mATRICULARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cONSULTARToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem tURMASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cURSOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gESTÃODEPENASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oCORRÊNCIASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gERISTRARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cONSULTARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bLOQUIOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sAIRToolStripMenuItem;
     }
 }

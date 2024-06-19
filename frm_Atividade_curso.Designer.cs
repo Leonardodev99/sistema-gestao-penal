@@ -245,8 +245,10 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
+            this.MaximizeBox = false;
             this.Name = "frm_Atividade_curso";
-            this.Text = "frm_Atividade_curso";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Curso";
             this.Load += new System.EventHandler(this.frm_Atividade_curso_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

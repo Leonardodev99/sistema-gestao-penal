@@ -46,6 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="db_presystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_presystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_presystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_presystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_presystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_presystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_presystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_presystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_presystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_presystemDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frm_Detentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +94,36 @@
     </Compile>
     <Compile Include="frm_cela.Designer.cs">
       <DependentUpon>frm_cela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ListarAtividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListarAtividades.Designer.cs">
+      <DependentUpon>frm_ListarAtividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ListarCelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListarCelas.Designer.cs">
+      <DependentUpon>frm_ListarCelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ListarCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListarCursos.Designer.cs">
+      <DependentUpon>frm_ListarCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ListarDetentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListarDetentos.Designer.cs">
+      <DependentUpon>frm_ListarDetentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ListarVisitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListarVisitas.Designer.cs">
+      <DependentUpon>frm_ListarVisitas.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
@@ -113,6 +168,21 @@
     <EmbeddedResource Include="frm_cela.resx">
       <DependentUpon>frm_cela.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListarAtividades.resx">
+      <DependentUpon>frm_ListarAtividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListarCelas.resx">
+      <DependentUpon>frm_ListarCelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListarCursos.resx">
+      <DependentUpon>frm_ListarCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListarDetentos.resx">
+      <DependentUpon>frm_ListarDetentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListarVisitas.resx">
+      <DependentUpon>frm_ListarVisitas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +204,61 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="db_presystemDataSet.xsc">
+      <DependentUpon>db_presystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_presystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_presystemDataSet.xss">
+      <DependentUpon>db_presystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet1.xsc">
+      <DependentUpon>db_presystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_presystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_presystemDataSet1.xss">
+      <DependentUpon>db_presystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet2.xsc">
+      <DependentUpon>db_presystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_presystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_presystemDataSet2.xss">
+      <DependentUpon>db_presystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet3.xsc">
+      <DependentUpon>db_presystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_presystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_presystemDataSet3.xss">
+      <DependentUpon>db_presystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet4.xsc">
+      <DependentUpon>db_presystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="db_presystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_presystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_presystemDataSet4.xss">
+      <DependentUpon>db_presystemDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

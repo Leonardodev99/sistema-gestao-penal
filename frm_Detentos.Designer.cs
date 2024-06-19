@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textCela = new System.Windows.Forms.TextBox();
             this.textIdCurso = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.textSetorPolicial = new System.Windows.Forms.TextBox();
@@ -67,7 +68,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textCela = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -208,6 +208,13 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(898, 206);
             this.panel2.TabIndex = 3;
+            // 
+            // textCela
+            // 
+            this.textCela.Location = new System.Drawing.Point(740, 160);
+            this.textCela.Name = "textCela";
+            this.textCela.Size = new System.Drawing.Size(110, 20);
+            this.textCela.TabIndex = 20;
             // 
             // textIdCurso
             // 
@@ -422,6 +429,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "VOLTAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -433,25 +441,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textCela
-            // 
-            this.textCela.Location = new System.Drawing.Point(740, 160);
-            this.textCela.Name = "textCela";
-            this.textCela.Size = new System.Drawing.Size(110, 20);
-            this.textCela.TabIndex = 20;
-            // 
             // frm_Detentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(923, 681);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
+            this.MaximizeBox = false;
             this.Name = "frm_Detentos";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Detento";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);

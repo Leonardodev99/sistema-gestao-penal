@@ -148,9 +148,8 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(341, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 29);
+            this.label1.Size = new System.Drawing.Size(0, 29);
             this.label1.TabIndex = 7;
-            this.label1.Text = "MARCAÇÃO DE VISITA";
             // 
             // panel1
             // 
@@ -240,8 +239,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
+            this.MaximizeBox = false;
             this.Name = "frm_visita_agenda";
-            this.Text = "frm_visita_agenda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Agendamento de visita";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);

@@ -48,23 +48,26 @@
             // 
             // textUsername
             // 
+            this.textUsername.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUsername.Location = new System.Drawing.Point(181, 83);
             this.textUsername.Name = "textUsername";
-            this.textUsername.Size = new System.Drawing.Size(204, 20);
+            this.textUsername.Size = new System.Drawing.Size(204, 25);
             this.textUsername.TabIndex = 1;
             // 
             // textPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(181, 145);
+            this.textPassword.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPassword.Location = new System.Drawing.Point(181, 156);
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(204, 20);
+            this.textPassword.Size = new System.Drawing.Size(204, 25);
             this.textPassword.TabIndex = 3;
+            this.textPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(100, 145);
+            this.label2.Location = new System.Drawing.Point(100, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 2;
@@ -72,7 +75,7 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(181, 226);
+            this.btnEntrar.Location = new System.Drawing.Point(181, 236);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
             this.btnEntrar.TabIndex = 4;
@@ -82,26 +85,30 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(310, 226);
+            this.btnSair.Location = new System.Drawing.Point(310, 236);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 5;
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 293);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(527, 308);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.textPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textUsername);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "frm_login";
-            this.Text = "frm_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

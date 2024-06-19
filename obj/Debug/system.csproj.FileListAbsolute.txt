@@ -14,3 +14,8 @@ C:\presystem\system\obj\Debug\system.frm_Atividade_curso.resources
 C:\presystem\system\obj\Debug\system.frm_cela.resources
 C:\presystem\system\obj\Debug\system.frm_Atividades.resources
 C:\presystem\system\obj\Debug\system.frm_Detentos.resources
+C:\presystem\system\obj\Debug\system.frm_ListarCursos.resources
+C:\presystem\system\obj\Debug\system.frm_ListarVisitas.resources
+C:\presystem\system\obj\Debug\system.frm_ListarAtividades.resources
+C:\presystem\system\obj\Debug\system.frm_ListarCelas.resources
+C:\presystem\system\obj\Debug\system.frm_ListarDetentos.resources

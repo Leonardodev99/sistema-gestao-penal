@@ -24,7 +24,7 @@ namespace system
 
         private void cADASTRARToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_Detento_Cadastro frm = new frm_Detento_Cadastro();
+            frm_Detentos frm = new frm_Detentos();
             frm.Show();
             this.Close();
         }
@@ -39,9 +39,9 @@ namespace system
 
         private void rEGISTRARToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*frm_Atividades frm = new frm_Atividades();
+            frm_Atividades frm = new frm_Atividades();
             frm.Show();
-            this.Close();*/
+            this.Close();
         }
 
         private void rEGISTRARToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -60,9 +60,9 @@ namespace system
 
         private void dETENTOToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frm_Pena_registrar frm = new frm_Pena_registrar();
+            /*frm_Pena_registrar frm = new frm_Pena_registrar();
             frm.Show();
-            this.Close();
+            this.Close();*/
         }
 
         private void oCORRÊNCIASToolStripMenuItem_Click(object sender, EventArgs e)

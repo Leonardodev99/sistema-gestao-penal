@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using system.Model;
-using System.Data.SqlClient;
 
 namespace system
 {
     public partial class frm_Atividade_curso : Form
     {
         private string connectionString = @"Data Source=PC\LEO;Initial Catalog=db_presystem;Integrated Security=True";
+
         public frm_Atividade_curso()
         {
             InitializeComponent();
@@ -49,6 +43,11 @@ namespace system
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (!ValidarTodosCampos())
+            {
+                return;
+            }
+
             Cursos curso = new Cursos
             {
                 Nome = textNome.Text,
@@ -70,8 +69,50 @@ namespace system
             {
                 MessageBox.Show("Erro ao cadastrar curso.");
             }
-            //MessageBox.Show("Cadastro feito com sucesso");
         }
+
+        private bool ValidarTodosCampos()
+        {
+            return ValidarCampoTexto(textNome, "Nome") &&
+                   ValidarCampoTexto(textInstituicaoResponsavel, "Instituição Responsável") &&
+                   ValidarCampoTexto(textLocal, "Local") &&
+                   ValidarCampoNumerico(textDuracao, "Duração") &&
+                   ValidarDatas(dateTimePickerDataInicio, dateTimePickerDataTermino) &&
+                   ValidarCampoTexto(textHorario, "Horário") &&
+                   ValidarCampoTexto(textDescricacao, "Descrição");
+        }
+
+        private bool ValidarCampoTexto(TextBox textBox, string nomeCampo)
+        {
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                MessageBox.Show($"O campo {nomeCampo} é obrigatório.");
+                return false;
+            }
+            return true;
+        }
+
+        private bool ValidarCampoNumerico(TextBox textBox, string nomeCampo)
+        {
+            int numero;
+            if (!int.TryParse(textBox.Text, out numero) || numero <= 0)
+            {
+                MessageBox.Show($"O campo {nomeCampo} deve ser um número positivo válido.");
+                return false;
+            }
+            return true;
+        }
+
+        private bool ValidarDatas(DateTimePicker dataInicio, DateTimePicker dataTermino)
+        {
+            if (dataTermino.Value < dataInicio.Value)
+            {
+                MessageBox.Show("A data de término deve ser maior ou igual à data de início.");
+                return false;
+            }
+            return true;
+        }
+
         private bool CadastrarCurso(Cursos curso)
         {
             try

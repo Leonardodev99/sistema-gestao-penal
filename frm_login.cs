@@ -17,11 +17,16 @@ namespace system
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+            if (!ValidarTodosCampos())
+            {
+                return;
+            }
+
             try
             {
                 connection.Open();
@@ -42,7 +47,7 @@ namespace system
                     }
                     else
                     {
-                        MessageBox.Show("Nome do usuário ou password incorreta", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Nome do usuário ou senha incorreta", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -54,6 +59,22 @@ namespace system
             {
                 connection.Close();
             }
+        }
+
+        private bool ValidarTodosCampos()
+        {
+            return ValidarCampoTexto(textUsername, "Nome do Usuário") &&
+                   ValidarCampoTexto(textPassword, "Senha");
+        }
+
+        private bool ValidarCampoTexto(TextBox textBox, string nomeCampo)
+        {
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                MessageBox.Show($"O campo {nomeCampo} é obrigatório.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
         }
     }
 }

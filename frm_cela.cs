@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 using system.Model; // Verifique se esse namespace está correto e não entra em conflito com 'System'
 
 namespace system // Considere renomear este namespace para algo mais específico
@@ -23,6 +16,11 @@ namespace system // Considere renomear este namespace para algo mais específico
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            if (!ValidarTodosCampos())
+            {
+                return;
+            }
+
             Cela cela = new Cela
             {
                 Nome = textNome.Text,
@@ -38,6 +36,33 @@ namespace system // Considere renomear este namespace para algo mais específico
             {
                 MessageBox.Show("Erro ao cadastrar cela.");
             }
+        }
+
+        private bool ValidarTodosCampos()
+        {
+            return ValidarCampoTexto(textNome, "Nome") &&
+                   ValidarCampoNumerico(textCapacidade, "Capacidade");
+        }
+
+        private bool ValidarCampoTexto(TextBox textBox, string nomeCampo)
+        {
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                MessageBox.Show($"O campo {nomeCampo} é obrigatório.");
+                return false;
+            }
+            return true;
+        }
+
+        private bool ValidarCampoNumerico(TextBox textBox, string nomeCampo)
+        {
+            int numero;
+            if (!int.TryParse(textBox.Text, out numero) || numero <= 0)
+            {
+                MessageBox.Show($"O campo {nomeCampo} deve ser um número positivo válido.");
+                return false;
+            }
+            return true;
         }
 
         private bool CadastrarCela(Cela cela)
@@ -83,4 +108,5 @@ namespace system // Considere renomear este namespace para algo mais específico
         }
     }
 }
+
 

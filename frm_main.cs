@@ -31,9 +31,9 @@ namespace system
 
         private void aGENDARToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
-           frm_visita_agenda frm = new frm_visita_agenda();
-            frm.Show();
+
+            frm_Visitas fr = new frm_Visitas();
+            fr.Show();
             this.Close();
         }
 

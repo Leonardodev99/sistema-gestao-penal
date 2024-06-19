@@ -9,7 +9,6 @@ C:\presystem\system\obj\Debug\system.exe
 C:\presystem\system\obj\Debug\system.pdb
 C:\presystem\system\obj\Debug\system.frm_main.resources
 C:\presystem\system\obj\Debug\system.frm_login.resources
-C:\presystem\system\obj\Debug\system.frm_visita_agenda.resources
 C:\presystem\system\obj\Debug\system.frm_Atividade_curso.resources
 C:\presystem\system\obj\Debug\system.frm_cela.resources
 C:\presystem\system\obj\Debug\system.frm_Atividades.resources
@@ -19,3 +18,4 @@ C:\presystem\system\obj\Debug\system.frm_ListarVisitas.resources
 C:\presystem\system\obj\Debug\system.frm_ListarAtividades.resources
 C:\presystem\system\obj\Debug\system.frm_ListarCelas.resources
 C:\presystem\system\obj\Debug\system.frm_ListarDetentos.resources
+C:\presystem\system\obj\Debug\system.frm_Visitas.resources

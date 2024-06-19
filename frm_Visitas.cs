@@ -12,38 +12,20 @@ using System.Data.SqlClient;
 
 namespace system
 {
-    public partial class frm_visita_agenda : Form
+    public partial class frm_Visitas : Form
     {
         private string conectionString = @"Data Source=PC\LEO;Initial Catalog=db_presystem;Integrated Security=True";
-        public frm_visita_agenda()
+        public frm_Visitas()
         {
             InitializeComponent();
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void btnConfirmar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            frm_main frm = new frm_main();
-            frm.Show();
-            this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            if (!ValidarTodosCampos())
+            {
+                return;
+            }
             Visitas visita = new Visitas
             {
                 Nome = textNome.Text,
@@ -63,6 +45,49 @@ namespace system
             {
                 MessageBox.Show("Erro ao agendar visita");
             }
+        }
+
+        private bool ValidarTodosCampos()
+        {
+            return ValidarCampoTexto(textNome, "Nome do Visitante") &&
+                   ValidarCampoTexto(textBI, "BI do visitante") &&
+                   ValidarIdade(dateTimePickerDataNascimento) &&
+                   ValidarCampoTexto(textEndereco, "Endereço do Visitante") &&
+                   ValidarCampoTexto(textMotivo, "Motivo da visita") &&
+                   ValidarDataVisita(dateTimePickerDataVisita);
+        }
+
+        private bool ValidarCampoTexto(TextBox textBox, string nomeCampo)
+        {
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                MessageBox.Show($"O campo {nomeCampo} é obrigatório.");
+                return false;
+            }
+            return true;
+        }
+
+        private bool ValidarIdade(DateTimePicker datePicker)
+        {
+            int idade = DateTime.Today.Year - datePicker.Value.Year;
+            if (datePicker.Value.Date > DateTime.Today.AddYears(-idade)) idade--;
+            if (idade < 18)
+            {
+                MessageBox.Show("O visitante deve ser maior de idade (18+ anos).");
+                return false;
+            }
+            return true;
+        }
+
+        private bool ValidarDataVisita(DateTimePicker datePicker)
+        {
+            if (datePicker.Value.Date <= DateTime.Today)
+            {
+                MessageBox.Show("A data da visita deve ser maior que a data atual.");
+                return false;
+            }
+            
+            return true;
         }
 
         private bool AgendarVisita(Visitas visita)
@@ -108,5 +133,11 @@ namespace system
 
         }
 
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frm_main frm = new frm_main();
+            frm.Show();
+            this.Close();
+        }
     }
 }
